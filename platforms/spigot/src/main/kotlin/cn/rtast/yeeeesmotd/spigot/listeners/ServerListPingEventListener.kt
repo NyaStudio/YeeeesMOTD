@@ -33,7 +33,6 @@ import org.bukkit.event.server.ServerListPingEvent
 import java.io.ByteArrayInputStream
 import java.util.*
 import javax.imageio.ImageIO
-import kotlin.random.Random
 
 class ServerListPingEventListener(private val server: Server) : Listener {
 
@@ -42,7 +41,7 @@ class ServerListPingEventListener(private val server: Server) : Listener {
         val ip = event.address.hostName
 
         var favicon = server.loadServerIcon(defaultIcon)
-        val showHead = Random.nextBoolean()
+        val showHead = false;
 
         val randomDescription = configManager.getRandomDescription()
         val finalDescription = StringBuilder()

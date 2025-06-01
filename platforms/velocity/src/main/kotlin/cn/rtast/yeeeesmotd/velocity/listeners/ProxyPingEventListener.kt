@@ -38,7 +38,6 @@ import net.kyori.adventure.text.format.TextColor
 import java.io.ByteArrayInputStream
 import java.util.*
 import javax.imageio.ImageIO
-import kotlin.random.Random
 
 class ProxyPingEventListener {
 
@@ -47,7 +46,7 @@ class ProxyPingEventListener {
         val ip = event.connection.remoteAddress.hostName
 
         var favicon = Favicon.create(defaultIcon)
-        val showHead = Random.nextBoolean()
+        val showHead = false;
 
         val randomDescription = configManager.getRandomDescription()
         var finalDescription = Component.text()

@@ -38,7 +38,6 @@ import net.md_5.bungee.event.EventHandler
 import java.io.ByteArrayInputStream
 import java.util.*
 import javax.imageio.ImageIO
-import kotlin.random.Random
 
 class ProxyPingEventListener : Listener {
 
@@ -47,7 +46,7 @@ class ProxyPingEventListener : Listener {
         val ip = event.connection.socketAddress.toString().split(":").first().replace("/", "")
 
         var favicon = Favicon.create(defaultIcon)
-        val showHead = Random.nextBoolean()
+        val showHead = false;
 
         val randomDescription = configManager.getRandomDescription()
         val finalDescription = StringBuilder()
