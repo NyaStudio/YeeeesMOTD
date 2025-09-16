@@ -1,0 +1,12 @@
+{
+  "id": "yeeeesmotd",
+  "name": "YeeeesMOTD",
+  "version": "$version",
+  "description": "$description",
+  "url": "https://github.com/RTAkland/YeeeesMOTD",
+  "authors": [
+    "RTAkland"
+  ],
+  "dependencies": [],
+  "main": "cn.rtast.yeeeesmotd.velocity.YeeeesMOTDPlugin"
+}
